@@ -13,35 +13,40 @@
 <br>
 <br>
 <br>
-<br>
-<br>
+
+<body>
 <div class="container">
     <div class='row'>
         <div class='col-md-4'></div>
         <div class='col-md-4'>
           <script src='https://js.stripe.com/v2/' type='text/javascript'></script>
-          <form accept-charset="UTF-8" action="/" class="require-validation" data-cc-on-file="false" data-stripe-publishable-key="pk_bQQaTxnaZlzv4FnnuZ28LFHccVSaj" id="payment-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓" /><input name="_method" type="hidden" value="PUT" /><input name="authenticity_token" type="hidden" value="qLZ9cScer7ZxqulsUWazw4x3cSEzv899SP/7ThPCOV8=" /></div>
+        
+            <div style="margin:0;padding:0;display:inline">
+              <input name="utf8" type="hidden" value="✓" />
+              <input name="_method" type="hidden" value="PUT" />
+              <input name="authenticity_token" type="hidden" value="qLZ9cScer7ZxqulsUWazw4x3cSEzv899SP/7ThPCOV8=" />
+            </div>
             <div class='form-row'>
               <div class='col-xs-12 form-group required'>
                <h1>Payment Form</h1>
                 <label class='control-label'>Name on Card</label>
-                <input class='form-control' size='4' type='text'>
+                <input class="form-control" size="4" type="text"[(ngModel)]="name">
               </div>
             </div>
             <div class='form-row'>
               <div class='col-xs-12 form-group card required'>
                 <label class='control-label'>Card Number</label>
-                <input autocomplete='off' class='form-control card-number' size='20' type='text'>
+                <input autocomplete='off' class='form-control card-number' size='20' type='text'[(ngModel)]="cardno">
               </div>
             </div>
             <div class='form-row'>
               <div class='col-xs-4 form-group cvc required'>
                 <label class='control-label'>CVC</label>
-                <input autocomplete='off' class='form-control card-cvc' placeholder='ex. 311' size='4' type='text'>
+                <input autocomplete='off' class='form-control card-cvc' placeholder='ex. 311' size='4' type='text'[(ngModel)]="cvc">
               </div>
               <div class='col-xs-4 form-group expiration required'>
                 <label class='control-label'>Expiration</label>
-                <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'>
+                <input class='form-control card-expiry-month' placeholder='MM' size='2' type='text'[(ngModel)]="expary">
               </div>
               <div class='col-xs-4 form-group expiration required'>
                 <label class='control-label'> </label>
@@ -58,7 +63,7 @@
             </div>
             <div class='form-row'>
               <div class='col-md-12 form-group'>
-                <button class='form-control btn btn-primary submit-button' type='submit'>Pay »</button>
+                <button class='form-control btn btn-primary submit-button' type='submit'(click)="pay()">Pay</button>
               </div>
             </div>
             <div class='form-row'>
@@ -68,8 +73,93 @@
                 </div>
               </div>
             </div>
-          </form>
+         
         </div>
         <div class='col-md-4'></div>
     </div>
 </div>
+<form>
+
+<p>{{radio}}</p>
+<p>{{drop}}</p>
+<p>{{drop1}}</p>
+<p>{{date1}}</p>
+<p>{{date2}}</p>
+</form>
+</body>
+<div class="cta-sektion cta-padding35">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-9 col-sm-9 col-xs-12">
+              <h3><span class="glyphicon glyphicon-cog "></span> <b>Homes for sale?</b> Explore properties like a pro.</h3>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12 Tpadding10">
+              <button type="button" class="btn btn-primary site-btn">Start Right Now</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="footer-section">
+  <div class="footer">
+<div class="container">
+  <div class="col-md-4 footer-one">
+    <h5>About Us </h5>
+      <p>How practical is an amazing weekend break for skiing if what you really look forward is relaxing on a sandy beach?
+         How good a great destination can be, if it’s too expensive to get there? 
+         Cheapflights offers an innovative and useful online experience, 
+        so you can find your perfect destination in just a couple of clicks!</p>
+        <div class="social-icons"> 
+             <a href="https://www.facebook.com/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+             <a href="https://twitter.com/"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+            <a href="https://plus.google.com/"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+            <a href="mailto:bootsnipp@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>	
+  </div>
+  <div class="col-md-3 footer-two">
+      <h5>Information </h5>
+      <ul>
+                <li><a href="maintenance.html">Maintenance Tips</a></li>
+                <li><a href="contact.html">Locations</a></li>
+                <li><a href="about.html">Testimonials</a></li>
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Partners</a></li>
+              </ul>
+  </div>
+  <div class="col-md-3 footer-three">
+      <h5>Helpful Links </h5>
+      <ul>
+                <li><a href="maintenance.html">Maintenance Tips</a></li>
+                <li><a href="contact.html">Locations</a></li>
+                <li><a href="about.html">Testimonials</a></li>
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Partners</a></li>
+              </ul>
+  </div>
+  <div class="col-md-2 footer-four">
+      <h5>Helpful Links </h5>
+      <ul>
+                <li><a href="maintenance.html">Maintenance Tips</a></li>
+                <li><a href="contact.html">Locations</a></li>
+                <li><a href="about.html">Testimonials</a></li>
+                <li><a href="about.html">Careers</a></li>
+                <li><a href="about.html">Partners</a></li>
+              </ul>
+  </div>
+  <div class="clearfix"></div>
+</div>
+</div>
+  <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center ">
+            <div class="copyright-text">
+              <p>CopyRight © 2017 Nkosazane All Rights Reserved</p>
+            </div>
+          </div> <!-- End Col -->
+          
+        </div>
+      </div>
+  </div>
+

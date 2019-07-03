@@ -23,45 +23,71 @@
     </div>
     </div>
     
-    
+  
      
     <div class="page-container">
         <h2>Make your booking now </h2>
-        <br>       
-        <form action="#" method="POST">
+        <br> 
+        <div class="max">    
+        <form action="QueryString.cgi ">
     <h1>BOOK NOW</h1>
+
+    
     <label>RoundTrip:</label>
-    <INPUT type="radio" name="name">
+    <input type="radio"  value="RoundTrip" name="radio" [(ngModel)]="radio">
       <br>
    <label> OneWay:</label>
    &nbsp;
-    <INPUT type="radio" name="name">
+    <input type="radio" value="OneWay" name="radio" [(ngModel)]="radio">
       <br>
    <label> Multy-city:</label>
    
-    <INPUT type="radio" name="name">
-    <br>
+    <input type="radio" value="Multy-city" name="radio" [(ngModel)]="radio">
+  
+        <br>
+        <br>
            <label> Airport:</label>
             &nbsp; &nbsp;
-            <input type="text" name="name" class="Name" placeholder="enter city or airport">
-    
+            <select  style="height: 30%;width:30%"name="drop"[(ngModel)]="drop">
+                <option>New York(JF)</option>
+                <option value="OR Tambo"> OR Tambo</option>
+                <option value="Cape Town Airpot">Cape Town Airport</option>
+                <option value="Ivato International Airport">Ivato International Airport</option>
+                <option value="	Nouadhibou International Airport">	Nouadhibou International Airport</option>
+                <option value="Maputo International Airport">Maputo International Airport</option>
+           
+                </select>
+    <br>
     <label>Depature:</label>
     &nbsp;
-    <input type="date">
+    <input type="date" name="date1"[(ngModel)]="date1">
   <br>
    
     <label>Return:</label>
     &nbsp; &nbsp;
-    <input type="date">
-    
+    <input type="date" name="date2" [(ngModel)]="date2">
+    <br>
+    <br>
     <label>Flights:</label>
     &nbsp; &nbsp;
-    <input type="password" name="password" class="Address" placeholder="Flight">
-    <br>
-            <button type="submit" value="Add" name="submit">Submit</button>
-          
+    <select  style="height: 30%;width:30%"name="drop1" [(ngModel)]="drop1">
+        <option>Economy</option>
+        <option value="	Business ">	Business </option>
+        <option value="Premium Economy ">Premium Economy </option>
+        <option value="First Class">First Class</option>
+        <option value="Second Class">Second Class</option>
+        <option value="Third Class">Third Class</option>
+   
+        </select>
+        <br>
+            <button type="submit" value="Add" name="submit" (click)="book()">Book</button>
+          <br>
+          <br>
+          <br>
+       
         </form>
     </div>
+  
     <br>
     <br>
       
@@ -148,6 +174,6 @@
   
 
 
-  </body>
+ 
 
-</html>
+

@@ -32,7 +32,7 @@
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #b40028;
+
 }
 .navbar-default .navbar-text {
   color: #ffffff;
@@ -42,7 +42,7 @@
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #b40028;
+
 }
 .navbar-default .navbar-nav > li > .dropdown-menu {
   background-color: #011034;
@@ -52,7 +52,7 @@
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
-  color: #b40028;
+
   background-color: #011034;
 }
 .navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
@@ -61,19 +61,19 @@
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-  color: #b40028;
+
   background-color: #011034;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #b40028;
+
   background-color: #011034;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #b40028;
+
   background-color: #011034;
 }
 .navbar-default .navbar-toggle {
@@ -94,7 +94,7 @@
   color: #ffffff;
 }
 .navbar-default .navbar-link:hover {
-  color: #b40028;
+
 }
 
 @media (max-width: 767px) {
@@ -103,12 +103,22 @@
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #b40028;
+ 
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #b40028;
+
     background-color: #011034;
   }
 }
+a{
+  color: #ffffff;
+font-size: 20px;
+}
+
+a:hover{
+text-decoration: none;
+color: rgb(68, 65, 65);
+}
+

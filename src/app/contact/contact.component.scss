@@ -44,7 +44,7 @@ a {
 	content: "";
 	width: 50px;
 	height: 2px;
-	background-color: #FF7200;
+	background-color: rgb(20, 52, 233);
 	left: 0;
 	bottom: 0;
 	left: 50%;
@@ -94,7 +94,7 @@ textarea {
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	        transform: translateY(-50%);
-	background-color: #FF7200;
+	background-color: rgb(20, 49, 218);
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
@@ -111,7 +111,7 @@ textarea {
 	font-weight: 400;
 }
 .contact-form input[type="submit"] {
-	background-color: #FF7200;
+	background-color: rgb(18, 48, 218);
 	border: 0px;
 	cursor: pointer;
 	font-size: 16px;
@@ -119,10 +119,10 @@ textarea {
 	transition: .4s
 }
 .contact-form input[type="submit"]:hover {
-	background-color: #CC5B00
+	background-color:  rgb(16, 48, 231);
 }
 .contact-form input:focus, textarea:focus {
-	border-color: #CC5B00
+	border-color: rgb(15, 44, 211);
 }
 
 
